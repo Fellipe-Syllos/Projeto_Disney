@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --images_width: 363px;
+    --images_height: 553px;
+
+    @media (max-width: 1220px) {
+        --images_width: 60%;
+    }
+
+    @media (max-height: 1950px) {
+        --images_height: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 850px) {
+        footer {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+header {
+    background-color: #1E1E1E;
+    width: 100vw;
+
+}
+
+nav {
+    height: 16vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Lily Script One", system-ui;
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.banner {
+    display: inline-block;
+    width: 100vw;
+}
+
+.disney-plus {
+    width: 100vw;
+    height: auto;
+    max-height: 69vh;
+}
+
+.galeria {
+    width: 100vw;
+}
+
+.galeria div {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8%;
+}
+
+.cartaz {
+    width: var(--images_width);
+    height: var(--images_height);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    width: 100vw;
+    height: 15vh;
+    font-family: "Actor", sans-serif;
+
+    p {
+        width: 80vw;
+        margin: 0 8%;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        margin: 0 8%;
+
+        figure {
+            height: var(--images_height);
+            padding: 0rem 1rem;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
